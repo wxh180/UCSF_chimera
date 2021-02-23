@@ -1,0 +1,6 @@
+movie record;
+cofr #1;
+turn y 15 rock 100;
+wait 100;
+stop;
+movie encode /Users/wei/Dropbox/Work/PGDH/Movies/OPGE2.mp4 quality high;
