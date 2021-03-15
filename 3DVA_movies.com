@@ -1,3 +1,7 @@
+#open /Users/whuang/Dropbox/Work/5LOX/FD_cryo/3D_variability/cryosparc_P11_J50_component_000/frame*.mrc vseries true
+#vseries play #1 direction oscillate loop true
+#vseries stop #1
+
 movie record
 vseries play #0 direction oscillate loop false normalize true cacheFrames 30
 wait 77
