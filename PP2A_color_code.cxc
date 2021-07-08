@@ -1,0 +1,6 @@
+sel /A
+color sel #FA3A2F
+sel /B
+color sel #4646FA
+sel /C
+color sel #FAD843
