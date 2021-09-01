@@ -1,0 +1,5 @@
+movie record;
+coordset #6 1,501,5 loop 3 bounce true
+wait 300;
+stop;
+movie encode dog_ctail_motion.mp4 quality high;
