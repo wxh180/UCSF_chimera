@@ -1,0 +1,11 @@
+open /home/wei/Dropbox/Work/PGDH/ColabFold/prediction_Nhis_dogPGDH_0b203/*.pdb 
+sel /A
+color sel red
+sel /B
+color sel blue
+mm #2/A to #1/A
+mm #3/A to #1/A
+mm #4/A to #1/A
+mm #5/A to #1/A
+sel :254-280
+color sel green
