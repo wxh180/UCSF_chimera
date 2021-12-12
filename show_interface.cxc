@@ -1,0 +1,12 @@
+# RBD is chain R
+# Nb is chain D
+
+sel /R
+sel sel @<5 & /D
+sel up
+show sel atoms
+
+sel /D
+sel sel @<5 & /R
+sel up
+show sel atoms
