@@ -1,0 +1,11 @@
+open step3_input.pdb
+open 6GM6_prod_all.dcd structureModel #1
+preset "overall look" publication
+sel :169,141,189,144,148
+color sel purple
+color sel byhetero
+select ~sel
+color sel #b2b2b2
+select clear
+lighting soft
+coordset #1 1,501,5 loop 1 bounce true
