@@ -1,3 +1,5 @@
+#align @CA toAtoms #1@CA each coordset
+
 open step3_input.pdb
 open 6GM6_prod_all.dcd structureModel #1
 preset "overall look" publication
