@@ -1,1 +1,2 @@
-perframe "vol #1 level .1 level $1" range .1,.02 frames 100
+perframe "volume #1 level $1" ranges 0.3, 0.1 frames 100
+wait 100
