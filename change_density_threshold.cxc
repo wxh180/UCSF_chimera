@@ -1,2 +1,11 @@
+movie record
 perframe "volume #1 level $1" ranges 0.3, 0.1 frames 100
 wait 100
+perframe "volume #1 level $1" ranges 0.1, 0.14 frames 20
+wait 20
+
+
+
+
+movie stop
+movie encode apo_density.mp4 quality higher
