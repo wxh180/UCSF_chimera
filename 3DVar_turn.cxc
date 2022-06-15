@@ -1,0 +1,23 @@
+movie record
+vseries play #1 direction oscillate loop false normalize true cacheFrames 30
+wait 90;
+vseries stop #1
+roll y 90 3
+wait 30;
+vseries play #1 direction oscillate loop false normalize true cacheFrames 30
+wait 90;
+vseries stop #1
+roll y 90 3
+wait 30;
+vseries play #1 direction oscillate loop false normalize true cacheFrames 30
+wait 90;
+vseries stop #1
+roll y 90 3
+wait 30;
+vseries play #1 direction oscillate loop false normalize true cacheFrames 30
+wait 90;
+vseries stop #1
+roll y 90 3
+wait 30;
+movie stop
+movie encode 3Dvar_turning.mp4 quality higher
