@@ -1,0 +1,9 @@
+volume style mesh meshlighting false squaremesh false
+color #005FFF transparency 20 targ s
+lighting model all directional false
+style ball
+size ball 0 stickradius 0.08
+color byelement targ a
+color C #E0E000 targ a
+set bgColor black
+camera ortho
