@@ -1,0 +1,48 @@
+# ============================================================
+# Protein–protein interface analysis in ChimeraX
+# Assumes interface between chains A and R in model #1
+# Usage (GUI):
+#   1) Open your structure so it is model #1
+#   2) File → Open… this script, or: open analyze_interface.cxc
+#
+# Usage (CLI):
+#   chimerax your.pdb analyze_interface.cxc
+# ============================================================
+
+# --- Basic display setup ---
+view #1
+hide atoms
+show cartoon
+color #1/A cornflowerblue
+color #1/R gold
+
+# --- Show atomic contacts across the interface ---
+# contacts between #1/A and #1/R within 4.0 Å
+# distanceOnly: use center–center distances; reveal: show pseudobonds
+contacts #1/A restrict #1/R distanceOnly 4 reveal true select true log true name ifaceAR
+
+# At this point:
+# - orange dashed pseudobonds (ifaceAR model) connect contacting atoms
+# - contacting atoms are selected
+
+# --- Promote selected atoms to whole residues (interface residues) ---
+select up
+
+# Highlight interface residues
+style sel stick
+show sel atoms
+
+# --- Optional: show hydrogen bonds across the interface ---
+hbonds #1/A restrict #1/R reveal true log true
+
+# --- Surface and SASA calculations ---
+# Per-residue SASA is stored as attribute "area"
+# You can later use:   attribute list res area & #1/A
+#                      attribute list res area & #1/R
+measure sasa #1/A
+measure sasa #1/R
+measure sasa #1/A,R
+
+# --- Final view: center on interface ---
+view sel
+graphics silhouettes true width 3
